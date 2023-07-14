@@ -1,0 +1,115 @@
+.create{
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left > img{
+    height: 50%;
+    width: 50%;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right > h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #262626;
+}
+
+.right > p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #262626;
+}
+
+.input__section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #222;
+    font-weight: bold;
+}
+
+.profileImg{
+    display: none;
+}
+
+.input__section-extra{
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    border: .5px solid;
+}
+
+.input__section-others{
+    display: flex;
+    color: #222;
+    font-weight: bold;
+    gap: 15px;
+}
+
+.inputs{
+    padding: 15px 25px;
+    border-radius: 20px;
+    width: 350px;
+    outline: none;
+    border: .5px solid;
+}
+
+.btns{
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+}
+
+.btns > p{
+    border: none;
+    padding: 15px 25px ;
+    color: #001D3D;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btns > button{
+    border: none;
+    padding: 15px 25px ;
+    background-color: #001D3D;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px){
+    .left{
+        display: none;
+    }
+
+    .inputs{
+        width: 240px;
+    }
+
+    .input__section-others{
+        flex-direction: column;
+    }
+
+    .input__section-extra{
+        width: 240px;
+    }
+}

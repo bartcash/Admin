@@ -1,0 +1,77 @@
+.login{
+    height: 100vh;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.login__input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login__input-form > h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #262626;
+}
+
+.login__input-form > img:last-child{
+   cursor: pointer;
+}
+
+.login__input-label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #222;
+    font-weight: bold;
+}
+
+.login__input{
+    padding: 15px 25px;
+    border-radius: 20px;
+    width: 400px;
+    outline: none;
+    border: .5px solid;
+}
+
+.login__resetpassword{
+    color: #222;
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.login__btn{
+    border: none;
+    padding: 15px 25px ;
+    background-color: #001D3D;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px){
+    .login__input-form{
+        gap: 15px;
+    }
+
+    .login__input-form > h2{
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .login__input{
+        width: 240px;
+        padding: 10px 15px;
+    }
+
+    .login__btn{
+        padding: 10px 15px;
+    }
+}
