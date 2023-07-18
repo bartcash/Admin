@@ -9,11 +9,10 @@ const SignUp = () => {
     const onSubmit = async (actions, values) => {
           await new Promise((resolve)=>setTimeout(resolve, 500))
             actions.resetForm()
-            console.log(actions)
-            console.log(values)
+          
     }
 
-    const { handleChange, handleBlur,  isSubmitting,  errors, touched, values, handleSubmit} = useFormik({
+    const { handleChange, handleBlur,  isSubmitting,  errors, touched, values, handleSubmit } = useFormik({
         initialValues: {
             email: '',
             password: ''
@@ -34,17 +33,16 @@ const SignUp = () => {
 
                 <label htmlFor='email'>Email </label>
                  <input 
+                 value={values.email}
+                 onChange={handleChange}
                  type='email' 
                  id="email"
                  placeholder='Enter Email' 
-                 className={errors.email ? 'signup__errors': "signup__input"}
-                 value={values.email}
-                 onChange={handleChange}
                  onBlur={handleBlur}
-                 minLength={4}
-                 maxLength={20}
+                 className={errors.email && touched.email ? 'signup__errors': "signup__input"}
+
                  />
-                 {errors.email  && <p className="signup__errors-msg">{errors.email}</p>}
+                 {errors.email && touched.email  && <p className="signup__errors-msg">{errors.email}</p>}
             </section>
             
  
@@ -52,15 +50,16 @@ const SignUp = () => {
 
                 <label htmlFor='password'> Password </label>
                 <input 
+                value={values.password}
+                onChange={handleChange}
                 type='password' 
                 id="password"
                 placeholder='Enter Password' 
-                className={errors.password ? 'signup__errors': "signup__input"}
-                value={values.password}
-                onChange={handleChange}
+                onBlur={handleBlur}
+                className={errors.password && touched.password ? 'signup__errors': "signup__input"}
                 
                 />
-                 {errors.password && touched.password && <span className="signup__errors-msg">{errors.password}</span>}
+                 {errors.password && touched.password && <p className="signup__errors-msg">{errors.password}</p>}
             </section>
             <button className='signup__btn' type="submit" disabled={isSubmitting} >Sign Up</button>
             <span>Already have an account? <Link to='/admin' className='link'>Login</Link></span>
