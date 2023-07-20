@@ -35,8 +35,8 @@ const Chart = () => {
         <h4>Products</h4>
       <ResponsiveContainer  width={500} height={400}>
         <AreaChart
-          width={500}
-          height={400}
+          // width={500}
+          // height={400}
           data={data}
           margin={{
             top: 10,

@@ -47,10 +47,10 @@ const data = [
 
 const Piechart = () => {
     return(
-         <ResponsiveContainer width={450} height={400}>
-        <BarChart
+      <section className='piechart'>
+          <BarChart
           width={500}
-          height={300}
+          height={420}
           data={data}
           margin={{
             top: 20,
@@ -68,7 +68,10 @@ const Piechart = () => {
           <Legend />
           <Tooltip />
         </BarChart>
-      </ResponsiveContainer>
+      </section>
+      //    <ResponsiveContainer width={450} height={400}>
+ 
+      // </ResponsiveContainer>
     )
 }
 

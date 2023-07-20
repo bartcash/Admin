@@ -1,6 +1,9 @@
 .product{
     height: 100vh;
+    max-width: 1200px;
     display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .product__cont{

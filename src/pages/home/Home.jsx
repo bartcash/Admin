@@ -9,9 +9,9 @@ const Home = () => {
       <section className='homeContainer'>
         <Topbar/>
         <section className='home__widget'>
-        <Widget/>
-        <Widget/>
-        <Widget/>
+        <Widget type='total'/>
+        <Widget type='accepted'/>
+        <Widget type='rejected'/>
         </section>
 
         <section className='home__chart'>
