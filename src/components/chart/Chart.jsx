@@ -33,7 +33,7 @@ const Chart = () => {
  
       <section className='chart'>
         <h4>Products</h4>
-      <ResponsiveContainer  width={550} height={400}>
+      <ResponsiveContainer  width={500} height={400}>
         <AreaChart
           width={500}
           height={400}

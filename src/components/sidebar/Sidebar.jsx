@@ -1,33 +1,36 @@
-// import { ExitToApp, Grid4x4, Notifications, ProductionQuantityLimits } from '@mui/icons-material'
+import { ExitToApp, Grid4x4, Dashboard, Notifications, ProductionQuantityLimits } from '@mui/icons-material'
+import { bartcashlogo } from '../../constants/images'
 import './sidebar.css'
 
 const Sidebar = () => {
   return (
     <section className='sidebar'>
-      Sidebar
-      {/* <div>
-        <ul>
-          <li>
-            <Grid4x4/>
-            Dashboard
+     
+      <div className='sidebar__div'>
+        <img src={bartcashlogo} alt='' className='sidebar__div-img' height={50} width={100}/>
+        <hr/>
+        <ul className='sidebar__div-ul'>
+          <li className='sidebar__div-li'>
+            <Dashboard/>
+            <span>Dashboard</span>
           </li>
 
-          <li>
+          <li className='sidebar__div-li'>
             <ProductionQuantityLimits/>
-            Product
+            <span>Product</span>
           </li>
 
-          <li>
+          <li className='sidebar__div-li'>
             <Notifications/>
-            Notifications
+           <span>Notifications</span>
           </li>
         </ul>
       </div>
 
-      <div>
+      <div className='sidebar__div2'>
         <ExitToApp/>
-        Logout
-      </div> */}
+        <span>Logout</span>
+      </div>
     </section>
   )
 }
