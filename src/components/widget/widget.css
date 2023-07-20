@@ -1,0 +1,15 @@
+.widget{
+    height: 100px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, .47);
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

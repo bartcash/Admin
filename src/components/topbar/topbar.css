@@ -1,0 +1,26 @@
+.topbar{
+    width: 100%;
+}
+
+.topbar__cont{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar__div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar__div > p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.topbar__img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}

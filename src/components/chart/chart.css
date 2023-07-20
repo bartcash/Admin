@@ -1,0 +1,8 @@
+.chart{
+    display: flex;
+    flex-direction: column;
+}
+
+.chart > h4{
+    text-align: left;
+}
