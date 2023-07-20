@@ -1,0 +1,9 @@
+.product{
+    height: 100vh;
+    display: flex;
+}
+
+.product__cont{
+    flex: 4;
+    background-color: red;
+}
