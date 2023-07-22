@@ -23,3 +23,16 @@
     justify-content: space-around;
     margin: 25px 10px;
 }
+
+@media screen and (max-width: 650px){
+    .home__widget{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .home__chart{
+        flex-direction: column;
+        margin: 20px;
+    }
+}
