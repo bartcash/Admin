@@ -25,8 +25,17 @@
     border-radius: 50%;
 }
 
+.topbar__menu{
+    display: none;
+}
+
+
 @media screen and (max-width: 650px){
     .topbar{
-        max-width: 100%;
+        width: 100%;
+    }
+
+    .topbar__menu{
+        display: block;
     }
 }

@@ -1,9 +1,41 @@
 import './topbar.css'
-import { avater } from '../../constants/images'
+import { avater } from '../../constants/images';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { useState } from 'react';
+
+const Menu = () => (
+  <>
+    <span>Dashboard</span>
+    <span>Product</span>
+    <span>Notifications</span>
+    <span>Logout</span>
+  </>
+)
 
 const Topbar = () => {
+
+  const [toggle, setToggle] = useState(false)
+
   return (
     <nav className='topbar'>
+
+      <section className='topbar__menu'>
+        {
+          toggle ? 
+          <RiCloseLine color='#fff' size={27} onClick={()=>setToggle(false)}/> :
+           <RiMenu3Line color='#fff' size={27} onClick={()=>setToggle(true)}/>
+        }
+
+        {
+          toggle && (
+            <section className='topbar__menu-section'>
+              <section className='topbar__menu-section-cont'>
+                <Menu/>
+              </section>
+            </section>
+          )
+        }
+      </section>
 
       <div className='topbar__cont'>
         <h2>Dashboard</h2>
