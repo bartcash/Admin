@@ -33,25 +33,28 @@ const Chart = () => {
  
       <section className='chart'>
         <h4>Products</h4>
-      <ResponsiveContainer  width='100%' height='100%'>
-        <AreaChart
-          width={450}
-          height={400}
-          data={data}
-          margin={{
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-         
-          <Tooltip />
-          <Area type="monotone" dataKey="total" stroke="#fae20c" fill="lightgray" />
-        </AreaChart>
-      </ResponsiveContainer>
+
+            <ResponsiveContainer height='100%'  width={420}>
+
+            <AreaChart
+              width={420}
+              height={400}
+              data={data}
+              margin={{
+                top: 10,
+                right: 30,
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+            
+              <Tooltip />
+              <Area type="monotone" dataKey="total" stroke="#fae20c" fill="lightgray" />
+            </AreaChart>
+            </ResponsiveContainer>
+    
       </section>
 
   )
