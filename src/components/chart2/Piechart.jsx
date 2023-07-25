@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const data = [
   {
