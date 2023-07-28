@@ -27,8 +27,33 @@
 
 .topbar__menu{
     display: none;
+    padding: 10px;
 }
 
+.topbar__menu-section{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.topbar__menu-section-cont{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: gray;
+    color: #001D3D;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;   
+    top: 25px;
+    left: -10px;
+}
+
+.scale-up-center{
+    animation:  scale-up-center .4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
 
 @media screen and (max-width: 650px){
     .topbar{
@@ -36,6 +61,10 @@
     }
 
     .topbar__menu{
-        display: block;
+        display: flex;
+    }
+
+    .topbar__cont{
+        display: none;
     }
 }

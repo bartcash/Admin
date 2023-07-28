@@ -11,7 +11,7 @@ const Widget = ({type}) => {
       details = {
         totalProduct: 'Product',
         num: 500,
-        icon: <ChatBubble/>,
+        icon: <ChatBubble style={{color: '#001D3D'}}/>,
         remain: 12
       };
       break;
@@ -19,7 +19,7 @@ const Widget = ({type}) => {
       details = {
         totalProduct: 'Accepted',
         num: 250,
-        icon: <ApprovalOutlined/>,
+        icon: <ApprovalOutlined style={{color: 'green'}}/>,
         remain: 30
       };
       break;
@@ -27,7 +27,7 @@ const Widget = ({type}) => {
       details = {
         totalProduct: 'Rejected',
         num: 250,
-        icon: <RemoveCircleOutline/>,
+        icon: <RemoveCircleOutline style={{color: 'crimson'}}/>,
         remain: 8
       };
       break;

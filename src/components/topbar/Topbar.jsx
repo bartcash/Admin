@@ -22,19 +22,21 @@ const Topbar = () => {
       <section className='topbar__menu'>
         {
           toggle ? 
-          <RiCloseLine color='#fff' size={27} onClick={()=>setToggle(false)}/> :
-           <RiMenu3Line color='#fff' size={27} onClick={()=>setToggle(true)}/>
+          <RiCloseLine color='#001D3D' size={27} onClick={()=>setToggle(false)}/> :
+           <RiMenu3Line color='#001D3D' size={27} onClick={()=>setToggle(true)}/>
         }
 
         {
           toggle && (
-            <section className='topbar__menu-section'>
+            <section className='topbar__menu-section scale-up-center'>
               <section className='topbar__menu-section-cont'>
                 <Menu/>
+      
               </section>
             </section>
           )
         }
+
       </section>
 
       <div className='topbar__cont'>
