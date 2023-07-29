@@ -55,6 +55,11 @@ hr{
     cursor: pointer;
 }
 
+.sidebar__div-text{
+    color: #111;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 650px){
     .sidebar{
         display: none;

@@ -1,6 +1,6 @@
 import './productlist.css'
 
-const ProductList = () => {
+const ProductList = ({title}) => {
   return (
     <main className='productList'>
       ProductList

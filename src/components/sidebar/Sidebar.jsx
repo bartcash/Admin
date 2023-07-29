@@ -1,4 +1,4 @@
-import { ExitToApp, Dashboard, Notifications, ProductionQuantityLimits } from '@mui/icons-material'
+import { ExitToApp, Dashboard, Notifications, ProductionQuantityLimits, } from '@mui/icons-material'
 import { bartcashlogo } from '../../constants/images'
 import './sidebar.css'
 import { Link } from 'react-router-dom'
@@ -14,22 +14,22 @@ const Sidebar = () => {
         <ul className='sidebar__div-ul'>
           <Link to='/' className='link'>
             <li className='sidebar__div-li'>
-              <Dashboard/>
-              <span>Dashboard</span>
+              <Dashboard style={{color: 'gray'}}/>
+              <span className='sidebar__div-text'>Dashboard</span>
             </li>
           </Link>
 
           <Link to='/product' className='link'>
             <li className='sidebar__div-li'>
-              <ProductionQuantityLimits/>
-              <span>Product</span>
+              <ProductionQuantityLimits style={{color: 'gray'}}/>
+              <span className='sidebar__div-text'>Product</span>
             </li>
           </Link>
 
-          <Link to='/'  className='link'>
+          <Link to='/notifications'  className='link'>
             <li className='sidebar__div-li'>
-              <Notifications/>
-            <span>Notifications</span>
+              <Notifications style={{color: 'gray'}}/>  
+            <span className='sidebar__div-text'>Notifications</span>
             </li>
           </Link>
         </ul>

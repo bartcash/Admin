@@ -3,12 +3,12 @@ import { Sidebar, DailyProduct, Topbar } from '../../components'
 import { dailyProduct } from '../../constants/dummyData'
 
 
-const Product = () => {
+const Product = ({title}) => {
   return (
     <main className='product'>
       <Sidebar/>
       <section className='product__cont'>
-        <Topbar/>
+        <Topbar title={title}/>
             <div className='product__top'>
                 <h3>Today</h3>
                 <p>SEE MORE</p>

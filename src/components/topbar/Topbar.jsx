@@ -12,7 +12,7 @@ const Menu = () => (
   </>
 )
 
-const Topbar = () => {
+const Topbar = ({title}) => {
 
   const [toggle, setToggle] = useState(false)
 
@@ -40,7 +40,7 @@ const Topbar = () => {
       </section>
 
       <div className='topbar__cont'>
-        <h2>Dashboard</h2>
+        <h2>{title}</h2>
         <div className='topbar__div'>
           <img src={pic1} alt='' className='topbar__img'/>
           <p>Sam Wayne</p> 

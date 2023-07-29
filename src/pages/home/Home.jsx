@@ -2,12 +2,12 @@ import './home.css'
 import { Sidebar, Topbar, Widget, Piechart, Chart } from '../../components'
 
 
-const Home = () => {
+const Home = ({title}) => {
   return (
     <main className='home'>
       <Sidebar/>
       <section className='homeContainer'>
-        <Topbar/>
+        <Topbar title={title}/>
         <section className='home__widget'>
         <Widget type='total'/>
         <Widget type='accepted'/>

@@ -1,0 +1,11 @@
+.notification{
+    max-width: 1200px;
+    display: flex;
+    height: 100vh;
+    margin: auto;
+}
+
+.notification__cont{
+    background-color: crimson;
+    flex: 4;
+}
