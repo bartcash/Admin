@@ -52,7 +52,7 @@
 }
 
 .scale-up-center{
-    animation:  scale-up-center .4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation:  scale-up-center .7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @media screen and (max-width: 650px){

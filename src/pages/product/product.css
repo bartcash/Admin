@@ -8,5 +8,24 @@
 
 .product__cont{
     flex: 4;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    background-color: crimson;
+}
+
+.product__top{
+    display: flex;
+    justify-content:space-between;
+}
+
+.product__top > p{
+    padding: 10px  15px;
+    color: #001D3D;
+    cursor: pointer;
+}
+
+.product__list{
+    display: flex;
+    justify-content:space-between;
 }
