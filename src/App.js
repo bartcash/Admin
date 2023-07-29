@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Signup, Login, Home, ResetLogin, Product, CreateAccount } from "./pages";
+import { Signup, Login, Home, ResetLogin, Product, ProductList, CreateAccount } from "./pages";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
@@ -52,6 +52,22 @@ function App() {
       element: (
         <Suspense  fallback={<div>Loading...</div>}>
           <Product/>
+        </Suspense>
+      )
+    },
+    {
+      path: '/product:id',
+      element: (
+        <Suspense  fallback={<div>Loading...</div>}>
+          <Product/>
+        </Suspense>
+      )
+    },
+    {
+      path: '/products',
+      element: (
+        <Suspense  fallback={<div>Loading...</div>}>
+          <ProductList/>
         </Suspense>
       )
     },

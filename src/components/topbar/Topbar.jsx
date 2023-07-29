@@ -1,5 +1,5 @@
 import './topbar.css'
-import { avater } from '../../constants/images';
+import { pic1 } from '../../constants/images';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import { useState } from 'react';
 
@@ -42,7 +42,7 @@ const Topbar = () => {
       <div className='topbar__cont'>
         <h2>Dashboard</h2>
         <div className='topbar__div'>
-          <img src={avater} alt='' className='topbar__img'/>
+          <img src={pic1} alt='' className='topbar__img'/>
           <p>Sam Wayne</p> 
         </div>
       </div>

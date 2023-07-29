@@ -6,6 +6,8 @@ const ResetLogin = lazy(()=> import('./resetlogin/ResetLogin'))
 const CreateAccount = lazy(()=> import('./createAcct/CreateAccount'))
 const Home = lazy(()=> import('./home/Home'))
 const Product = lazy(()=> import('./product/Product'))
+const ProductList = lazy(()=> import('./productList/ProductList'))
+const SingleProduct = lazy(()=> import('./singleProduct/SingleProduct'))
 
 
 export {
@@ -14,5 +16,7 @@ export {
     CreateAccount,
     Home,
     Product,
-    ResetLogin
+    ResetLogin,
+    ProductList,
+    SingleProduct
 }
