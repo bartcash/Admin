@@ -1,6 +1,7 @@
 import './product.css'
 import { Sidebar, DailyProduct, Topbar } from '../../components'
 import { dailyProduct } from '../../constants/dummyData'
+import { Link } from 'react-router-dom'
 
 
 const Product = ({title}) => {
@@ -11,12 +12,15 @@ const Product = ({title}) => {
         <Topbar title={title}/>
             <div className='product__top'>
                 <h3>Today</h3>
-                <p>SEE MORE</p>
+
+                <Link to='/products' className='link'>
+                   <p>SEE MORE</p>
+                </Link>
             </div>
           <section className='product__list'>
           {
             dailyProduct.map((products) => (
-              <DailyProduct/>
+              <DailyProduct products={products} key={products.id}/>
             ))
           }
             </section>
@@ -25,12 +29,15 @@ const Product = ({title}) => {
 
           <div className='product__top'>
                 <h3>Yesterday</h3>
-                <p>SEE MORE</p>
+
+                <Link to='/products' className='link'>
+                  <p>SEE MORE</p>
+                </Link>
             </div>
           <section className='product__list'>
           {
             dailyProduct.map((products) => (
-              <DailyProduct/>
+              <DailyProduct products={products} key={products.id}/>
             ))
           }
             </section>

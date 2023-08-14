@@ -42,6 +42,10 @@ hr{
     background-color: lightgray;
 }
 
+.sidebar__div-li:active{
+    background-color: lightgray;
+}
+
 
 .sidebar__div2{
     display: flex;

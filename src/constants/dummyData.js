@@ -65,14 +65,14 @@ export const products = [
     {
         id: 10,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Jerry King',
         user: require('../assets/noprofile.jpg'),
         product: require('../assets/shopping.png')
     },
     {
         id: 11,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Paul Egwuownu',
         user: require('../assets/noprofile.jpg'),
         product: require('../assets/shopping.png')
     },
