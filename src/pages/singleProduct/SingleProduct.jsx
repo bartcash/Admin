@@ -1,10 +1,15 @@
 import "./singleProduct.css"
+import { Sidebar, Topbar } from "../../components"
 
-const SingleProduct = () => {
+const SingleProduct = ({title}) => {
   return (
-    <div>
+    <main className="single__product">
+        <Sidebar/>
+      <section className="single__cont">
+        <Topbar title={title}/>
       SingleProduct
-    </div>
+      </section>
+    </main>
   )
 }
 

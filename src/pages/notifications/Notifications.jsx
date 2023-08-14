@@ -1,14 +1,15 @@
 import './notification.css'
 import { Sidebar, Topbar } from '../../components'
 
-const Notifications = () => {
+const Notifications = ({title}) => {
+
   return (
     <main className='notification'>
-        <section>
-            <Sidebar/>
-        </section>
+      
+        <Sidebar/>
+
         <section className='notification__cont'>
-            <Topbar/>
+            <Topbar title={title}/>
             Notifications
         </section>
     </main>

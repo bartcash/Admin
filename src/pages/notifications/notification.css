@@ -8,4 +8,7 @@
 .notification__cont{
     background-color: crimson;
     flex: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
 }
