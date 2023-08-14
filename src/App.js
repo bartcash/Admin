@@ -56,7 +56,7 @@ function App() {
       )
     },
     {
-      path: '/product:id',
+      path: '/product/:id',
       element: (
         <Suspense  fallback={<div>Loading...</div>}>
           <SingleProduct/>

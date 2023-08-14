@@ -1,31 +1,31 @@
-export const products = [
+export const dproducts = [
     {
         id: 1,
         title: 'HP Elitebook',
         seller: 'Jerry Martins',
         user: require('../assets/noprofile.jpg'),
-        product: require('../assets/shopping.png')
+        product: 'HP Chromebook'
     },
     {
         id: 2,
         title: 'HP Elitebook',
         seller: 'Jerry Martins',
         user: require('../assets/noprofile.jpg'),
-        product: require('../assets/shopping.png')
+        product: 'Mac 2 Pro'
     },
     {
         id: 3,
         title: 'HP Elitebook',
         seller: 'Jerry Martins',
         user: require('../assets/noprofile.jpg'),
-        product: require('../assets/shopping.png')
+        product: 'HP Elite Book'
     },
     {
         id: 4,
         title: 'HP Elitebook',
         seller: 'Jerry Martins',
         user: require('../assets/noprofile.jpg'),
-        product: require('../assets/shopping.png')
+        product: 'HP ProBook '
     },
     {
         id: 5,

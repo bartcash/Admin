@@ -1,6 +1,6 @@
 import './product.css'
 import { Sidebar, DailyProduct, Topbar } from '../../components'
-import { dailyProduct } from '../../constants/dummyData'
+import { dproducts } from '../../constants/dummyData'
 import { Link } from 'react-router-dom'
 
 
@@ -19,7 +19,7 @@ const Product = ({title}) => {
             </div>
           <section className='product__list'>
           {
-            dailyProduct.map((products) => (
+            dproducts.slice(0, 5).map((products) => (
               <DailyProduct products={products} key={products.id}/>
             ))
           }
@@ -36,7 +36,7 @@ const Product = ({title}) => {
             </div>
           <section className='product__list'>
           {
-            dailyProduct.map((products) => (
+            dproducts.slice(0, 5).map((products) => (
               <DailyProduct products={products} key={products.id}/>
             ))
           }

@@ -1,5 +1,6 @@
 import './product.css';
 import { pic1, chromebook } from '../../constants/images';
+import { Link } from 'react-router-dom';
 
 const DailyProduct = ({products}) => {
     return(
@@ -11,9 +12,11 @@ const DailyProduct = ({products}) => {
             </div>
 
             <div className="product__btm">
-                <img src={chromebook} alt='' className="product__btm-img"/>
-                {/* <p>{products.product}</p> */}
-                <p>Jerry Martins</p>
+                <Link to='/product/:id' className='link'>
+                    <img src={chromebook} alt='' className="product__btm-img"/>
+                    <p>{products.title}</p>
+                   
+                </Link>
 
             </div>
         </section>

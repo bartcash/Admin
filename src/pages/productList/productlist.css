@@ -1,0 +1,27 @@
+.productList{
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.productlist_cont{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 10px 15px;
+}
+
+.product__top{
+    margin: 15px;
+}
+
+.product__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 30px;
+}
