@@ -2,30 +2,30 @@ export const dproducts = [
     {
         id: 1,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Philip Essien',
         user: require('../assets/noprofile.jpg'),
-        product: 'HP Chromebook'
+        product:  require('../assets/shopping.png')
     },
     {
         id: 2,
         title: 'HP Elitebook',
         seller: 'Jerry Martins',
         user: require('../assets/noprofile.jpg'),
-        product: 'Mac 2 Pro'
+        product:  require('../assets/shopping.png')
     },
     {
         id: 3,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Paul Egwuonwu',
         user: require('../assets/noprofile.jpg'),
-        product: 'HP Elite Book'
+        product:  require('../assets/shopping.png')
     },
     {
         id: 4,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Daniel Samuel',
         user: require('../assets/noprofile.jpg'),
-        product: 'HP ProBook '
+        product:  require('../assets/shopping.png')
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ export const dproducts = [
     {
         id: 6,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Daniel Samuel',
         user: require('../assets/noprofile.jpg'),
         product: require('../assets/shopping.png')
     },
@@ -51,7 +51,7 @@ export const dproducts = [
     {
         id: 8,
         title: 'HP Elitebook',
-        seller: 'Jerry Martins',
+        seller: 'Daniel Samuel',
         user: require('../assets/noprofile.jpg'),
         product: require('../assets/shopping.png')
     },
@@ -99,40 +99,3 @@ export const dproducts = [
     },
 ]
 
-export const dailyProduct = [
-    {
-        id: 1,
-        title: 'HP Elitebook',
-        seller: 'Jerry Martins',
-        user: require('../assets/pic1.jpg'),
-        product: require('../assets/chromebook.jpg')
-    },
-    {
-        id: 2,
-        title: 'HP Elitebook',
-        seller: 'Jerry Martins',
-        user: require('../assets/pic1.jpg'),
-        product: require('../assets/chromebook.jpg')
-    },
-    {
-        id: 3,
-        title: 'HP Elitebook',
-        seller: 'Jerry Martins',
-        user: require('../assets/pic1.jpg'),
-        product: require('../assets/chromebook.jpg')
-    },
-    {
-        id: 4,
-        title: 'HP Elitebook',
-        seller: 'Jerry Martins',
-        user: require('../assets/pic1.jpg'),
-        product: require('../assets/chromebook.jpg')
-    },
-    {
-        id: 5,
-        title: 'HP Elitebook',
-        seller: 'Jerry Martins',
-        user: require('../assets/noprofile.jpg'),
-        product: require('../assets/shopping.png')
-    },
-]

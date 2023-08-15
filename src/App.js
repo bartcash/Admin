@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Signup, Login, Home, ResetLogin, Product, ProductList, SingleProduct, CreateAccount, Notifications } from "./pages";
+import { Signup, Login, Home, ResetLogin, Product, ProductList, SingleProduct, CreateAccount, Notifications, Owner } from "./pages";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
@@ -51,7 +51,7 @@ function App() {
       path: '/product',
       element: (
         <Suspense  fallback={<div>Loading...</div>}>
-          <Product title='Product' day1 = 'Today' day2 = 'Yesterday'/>
+          <Product title='Product'/>
         </Suspense>
       )
     },
@@ -60,6 +60,14 @@ function App() {
       element: (
         <Suspense  fallback={<div>Loading...</div>}>
           <SingleProduct title='Product'/>
+        </Suspense>
+      )
+    },
+    {
+      path: '/product/owner',
+      element: (
+        <Suspense  fallback={<div>Loading...</div>}>
+          <Owner title='Product'/>
         </Suspense>
       )
     },

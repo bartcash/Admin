@@ -1,0 +1,21 @@
+.product__owner{
+    max-width: 1200px;
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    background-color: #fff;
+}
+
+.product__owner-cont{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.product__owner-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -6,10 +6,12 @@ const DailyProduct = ({products}) => {
     return(
         <section className='d_product'>
 
-            <div className='product__center'>
-                <img src={pic1} alt=''  className='product__center-img'/>
-                <p>{products.seller}</p>
-            </div>
+            <Link to='/product/owner' className='link'>
+                <div className='product__center'>
+                    <img src={pic1} alt=''  className='product__center-img'/>
+                    <p>{products.seller}</p>
+                </div>
+            </Link>
 
             <div className="product__btm">
                 <Link to='/product/:id' className='link'>

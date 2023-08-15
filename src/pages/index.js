@@ -9,6 +9,8 @@ const Product = lazy(()=> import('./product/Product'))
 const ProductList = lazy(()=> import('./productList/ProductList'))
 const SingleProduct = lazy(()=> import('./singleProduct/SingleProduct'))
 const Notifications = lazy(()=> import('./notifications/Notifications'))
+const Owner = lazy(()=> import('./owner/Owner'))
+
 
 
 export {
@@ -20,5 +22,6 @@ export {
     ResetLogin,
     ProductList,
     SingleProduct,
-    Notifications
+    Notifications,
+    Owner
 }
