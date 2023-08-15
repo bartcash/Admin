@@ -17,6 +17,7 @@
 .product__top{
     display: flex;
     justify-content:space-between;
+    margin: 15px;
 }
 
 .product__top > p{
@@ -33,4 +34,5 @@
 hr{
     background: grey;
     border: .5px solid rgb(75, 45, 45);
+    margin-top: 15px;
 }

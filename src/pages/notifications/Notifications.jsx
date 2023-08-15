@@ -1,5 +1,6 @@
 import './notification.css'
-import { Sidebar, Topbar } from '../../components'
+import { Sidebar, Topbar, Notify } from '../../components'
+import { Switch } from '@mui/material'
 
 const Notifications = ({title}) => {
 
@@ -10,7 +11,20 @@ const Notifications = ({title}) => {
 
         <section className='notification__cont'>
             <Topbar title={title}/>
-            Notifications
+
+            <div className='product__top'>
+                <span className='product-text'>Mark as read</span>
+                <p className='product-text'>Turn off notification <Switch/></p>
+            </div>
+
+            <Notify/>
+            <Notify/>
+            <Notify/>
+            <Notify/>
+            <Notify/>
+            <Notify/>
+            <Notify/>
+          
         </section>
     </main>
   )

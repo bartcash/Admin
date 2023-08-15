@@ -36,8 +36,8 @@ const Sidebar = () => {
       </div>
 
       <div className='sidebar__div2'>
-        <ExitToApp/>
-        <span>Logout</span>
+        <ExitToApp style={{color: 'gray'}}/>
+        <span className='sidebar__div-text'>Logout</span>
       </div>
     </section>
   )

@@ -4,6 +4,7 @@ import Widget from './widget/Widget'
 import Piechart from './chart2/Piechart'
 import Chart from './chart/Chart'
 import DailyProduct from "./product/Product";
+import Notify from './notify/Notify'
 
 export {
     Sidebar,
@@ -11,5 +12,6 @@ export {
     Widget,
     Piechart,
     Chart,
-    DailyProduct
+    DailyProduct,
+    Notify
 }

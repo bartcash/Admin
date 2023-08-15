@@ -51,7 +51,7 @@ function App() {
       path: '/product',
       element: (
         <Suspense  fallback={<div>Loading...</div>}>
-          <Product title='Product'/>
+          <Product title='Product' day1 = 'Today' day2 = 'Yesterday'/>
         </Suspense>
       )
     },
