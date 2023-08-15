@@ -13,3 +13,30 @@
     flex-direction: column;
     padding: 10px 15px;
 }
+
+.single__main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.single__owner > h4{
+   margin: 10px 0px;
+}
+
+.single__owner-owner{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.single__owner-owner > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.single__owner-owner > span{
+    font-weight: 600;
+    cursor: pointer;
+}
