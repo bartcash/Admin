@@ -36,3 +36,9 @@ hr{
     border: .5px solid rgb(75, 45, 45);
     margin-top: 15px;
 }
+
+@media screen and (max-width: 650px){
+    .product__list{
+        flex-wrap: wrap;
+    }
+}
