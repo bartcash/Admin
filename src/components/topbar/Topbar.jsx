@@ -2,12 +2,19 @@ import './topbar.css'
 import { pic1 } from '../../constants/images';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 const Menu = () => (
   <>
+  <Link to='/' className='link'>
     <span>Dashboard</span>
+  </Link>
+  <Link to='/product' className='link'>
     <span>Product</span>
+  </Link>
+  <Link to='/notifications' className='link'>
     <span>Notifications</span>
+  </Link>
     <span>Logout</span>
   </>
 )
