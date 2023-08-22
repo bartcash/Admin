@@ -1,0 +1,21 @@
+.single{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    width: 50%;
+    align-items: center;
+}
+
+.single_left, .single_right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+span{
+    font-size: 14px;
+}

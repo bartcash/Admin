@@ -1,6 +1,7 @@
 import "./singleProduct.css"
 import { Sidebar, Topbar } from "../../components"
 import { pic1 } from "../../constants/images"
+import Single from "../../components/singleP/Single"
 
 const SingleProduct = ({title}) => {
   return (
@@ -23,23 +24,12 @@ const SingleProduct = ({title}) => {
               <span>view profile</span>
 
             </div>
+
+            <Single/>
           </div>
 
 
-          {/* <section className="single__product">
-              <div className="single__product-left">
-                <h4>Name of Product</h4>
-                <span>HP Chromebook</span>
-                <h4>Price</h4>
-                <span>$230</span>
-              </div>
-              <div className="single__product-right">
-              <h4>Category</h4>
-                <span>Electronics and Accessories</span>
-                <h4>Condition</h4>
-                <span>2 months used</span>
-              </div>
-          </section> */}
+  
 
         </section>
 
