@@ -1,7 +1,7 @@
 import "./singleProduct.css"
-import { Sidebar, Topbar } from "../../components"
+import { Sidebar, Topbar, Single,  Description } from "../../components"
 import { pic1 } from "../../constants/images"
-import Single from "../../components/singleP/Single"
+
 
 const SingleProduct = ({title}) => {
   return (
@@ -26,6 +26,7 @@ const SingleProduct = ({title}) => {
             </div>
 
             <Single/>
+            <Description/>
           </div>
 
 
