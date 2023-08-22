@@ -7,6 +7,10 @@
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, .47);
 }
 
+.notify:hover{
+    background-color: lightgray;
+}
+
 .notify-cont{
     display: flex;
     align-items: center;

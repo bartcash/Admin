@@ -6,18 +6,18 @@ const Single = () => {
     <section className='single'>
       <section className='single_left'>
         <h5>Name of Product</h5>
-        <span className="">MacBook 2 Pro</span>
+        <span className="t">MacBook 2 Pro</span>
 
         <h5>Price</h5>
-        <span className="">$541</span>
+        <span className="t">$541</span>
       </section>
 
       <section className='single_right'>
       <h5>Category</h5>
-        <span className="">Computer an accessories</span>
+        <span className="t">Computer an accessories</span>
 
         <h5>Condition</h5>
-        <span className="">2 months old</span>
+        <span className="t">2 months old</span>
       </section>
     </section>
   )

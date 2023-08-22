@@ -14,8 +14,13 @@
 
 h5{
     font-size: 18px;
+    color: #8f7f7f;
+ 
 }
 
-span{
+.t{
+    color: #001D3D;
     font-size: 14px;
+    font-weight: 600;
 }
+
